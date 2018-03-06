@@ -1,0 +1,225 @@
+#top-menuline {
+  background-color: #fff;
+  box-shadow: none;
+  border-bottom: none;
+}
+#top-menuline #logo {
+  margin-right: 0;
+}
+#top-menuline #search {
+  position: static;
+}
+#top-menuline #search .search-input:focus,
+#top-menuline #search .search-input:hover,
+#top-menuline #search.active .search-input {
+  border: none;
+  box-shadow: none;
+}
+#top-menuline #search .search-input {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: auto;
+  height: auto;
+  border: none;
+  box-shadow: none;
+}
+#top-menuline #search input[type=text] {
+  width: 200px;
+  order: 1;
+  height: 40px;
+  position: static;
+  margin: 0;
+  border: 1px solid #eee;
+  margin-right: 5px;
+}
+#top-menuline #search input[type=submit] {
+  padding: 0;
+  order: 2;
+  width: 44px;
+  height: 40px;
+  float: none;
+  margin: 0;
+  background-color: red;
+  background-image: url(../img/ic_search_white_24px.svg);
+  background-position: center;
+}
+.top-time {  
+  p {
+    margin: 0;
+  }
+  img {
+    width: 15px;
+    height: 15px;
+  }
+  span {
+    font-size: larger;
+  }
+}
+.logo_search_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo_search_flex div.top-phone {
+  color: #000;
+  float: none;
+  font-size: 14px;
+}
+.top-phone__tel {
+  display: block;
+  font-size: larger;
+  color: red;
+  font-weight: bold;
+  padding-left: 20px;
+  position: relative;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/ic_phone_black_24px.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+.top-phone__mail {
+  display: block;
+  color: #000;
+  padding-left: 20px;
+  position: relative;
+    
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/ic_mail_outline_black_24px.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+.top-cart {
+  padding-left: 30px;
+  position: relative;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/ic_shopping_cart_white_24px.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  p {
+    margin: 0;
+  }
+  a {
+    color: #000;
+  }
+}
+.top-cart__number {
+  text-transform: uppercase;
+  
+  span {
+    padding: 3px 10px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: red;
+  }
+}
+.top-cart__sum {
+  span {
+    font-weight: bold;
+  }
+}
+#left-col {
+  display: none;
+}
+#center-col {
+  margin-left: 0;
+}
+.menu-main {
+  width: 100%;
+  color: #fff;
+  background-color: #3b4b69;
+  position: relative;
+}
+.menu-main__list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 50;
+  background-color: #3b4b69;
+  list-style-type: none;
+  padding: 0 20px;
+  margin: 0;
+  
+  a {
+    color: #fff;
+  }
+}
+.menu-main__btn {
+  color: #fff;
+  background-color: rgba(255,255,255,0);
+  border: none;
+  padding-left: 50px;
+  margin-left: 20px;
+  height: 40px;
+  background-image: url(../img/icon-menu-ham.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 30px 19px;
+  cursor: pointer;
+  outline: none;
+}
+.menu-main__btn--close {
+  background-image: url(../img/icon-menu-cross.svg);
+}
+#mp-slider {
+  margin-top: 20px;
+  width: 70%;
+  height: 400px;
+  
+  .slide {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+#mp-slider .dots-container {
+  text-align: left;
+  padding-left: 20px;
+}
+#mp-slider .dots-container .dot {
+  border-radius: 50%;
+  border: 1px solid #3b4b69;
+}
+#mp-slider .dots-container .dot.active {
+  background-color: #3b4b69;
+}
+#center-col {
+  position: relative;
+}
+.banner {
+  width: 25%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  
+  img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
